@@ -140,7 +140,9 @@ const handleAddEvent = (e) => {
     //add date
         for (let j = 1; j <= lastDay; j++) {
             const isTodaydate = j===todaydate && currentMonth===todayMonth && currentYear===todayyear;
-            days.push(<span onClick={()=>handleclickdate(j)} className={isTodaydate ? "bg-blue-500 text-white rounded-full p-2":" "} key={`${j}`}>{j}</span>);
+            days.push(<span onClick={()=>handleclickdate(j)}   className={`flex items-center justify-center w-8 h-8 md:w-10 md:h-10 
+                text-sm font-medium cursor-pointer transition-all 
+                ${isTodaydate ? "bg-blue-500 text-white rounded-full" : "hover:bg-gray-200 rounded-lg"}`}  key={`${j}`}>{j}</span>);
         }
     
         return days;
@@ -242,7 +244,7 @@ const handleAddEvent = (e) => {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className='flexr gap-2'>
+                                        <div className='flex gap-2'>
                                             <button 
                                                 onClick={() => handleeditevent(index)}
                                                 className='p-2 text-blue-600 hover:bg-blue-50 rounded-full transition-colors'
