@@ -1,12 +1,12 @@
-import Calenderapp from "./components/calenderapp"
 
+import Calenderapp from "./components/Calenderapp";
 
 function App() {
 
   return (
   
      <div >
-      <Calenderapp/>
+   <Calenderapp/>
      </div>
 
   )

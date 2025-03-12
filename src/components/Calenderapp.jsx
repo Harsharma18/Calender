@@ -361,4 +361,4 @@ const handleAddEvent = (e) => {
 );
 }
 
-export default Calenderapp
+export default Calenderapp;
